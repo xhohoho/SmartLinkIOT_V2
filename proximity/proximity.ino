@@ -21,28 +21,59 @@ unsigned long debounceDelay = 5;
 unsigned long previousMillis = 0;  // Variable to store previous time
 unsigned int rpm = 0;  // Variable to store RPM value
 
-void IRinterrupt() {
+void IRAM_ATTR IRinterrupt() {
   currentButtonState = digitalRead(PIN);
+  Serial.println(millis());
+  Serial.println((String)"Current Button State: " + currentButtonState);
 
-  if (currentButtonState != lastButtonState) {
-    lastDebounceTime = millis();
-  }
-  if ((millis() - lastDebounceTime) > debounceDelay) {
-    if (currentButtonState != buttonState) {
-        buttonState = currentButtonState;
-      if (buttonState == LOW) {
-          counter++;
-      }
-    }
-  }  
+
+  // if (currentButtonState != lastButtonState) {
+  //   lastDebounceTime = millis();
+  // }
+
+  // if ((millis() - lastDebounceTime) > debounceDelay) {
+  //   if (currentButtonState != buttonState) {
+  //       buttonState = currentButtonState;
+  //     if (buttonState == LOW) {
+
+  //         counter++;
+
+  //     }
+  //   }
+  // }
+
+//   if (currentButtonState == LOW){
+
+//   counter++;
+
+//   // Serial.println(millis());
+//   // Serial.println(counter);
+// } 
+  
   lastButtonState = currentButtonState;
+  Serial.println(millis());
+  Serial.println((String)"Last Button State: " + lastButtonState);
+  Serial.println((String)"Counter: " + counter);
+
+
+
+//kadang jadi kadang tak jadi, effect noise dgn motor.
+// if (currentButtonState == LOW){
+
+//   counter++;
+
+//   // Serial.println(millis());
+//   // Serial.println(counter);
+// } 
+
 }
 
 void setup() {
   Serial.begin(9600);
   pinMode(PIN, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(PIN), IRinterrupt, FALLING);
+  attachInterrupt(digitalPinToInterrupt(PIN), IRinterrupt, CHANGE);
   currentTime = interval;
+  Serial.println("RPM measurement system starting");
 }
 
 void loop() {
@@ -50,11 +81,11 @@ void loop() {
 
 detachInterrupt(digitalPinToInterrupt(PIN));
 
-int rpm = (float(counter / 3 )) * 60; //divided by delay
+// int rpm = (float(counter / 3 )) * 60; //divided by delay
 
 
-Serial.println(millis());
-Serial.println(counter);
+// Serial.println(millis());
+// Serial.println(counter);
 // Serial.println("Measuring... last counter : ");
 // Serial.println(lastCounter);
 
@@ -64,6 +95,8 @@ Serial.println(counter);
 //   lastCounter = counter * 4;
 //   counter = 0;
 // }
+
+
 
 attachInterrupt(digitalPinToInterrupt(PIN), IRinterrupt, FALLING);
 delay(1000);// second delay
