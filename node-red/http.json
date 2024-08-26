@@ -1,0 +1,907 @@
+[
+    {
+        "id": "b96a3b3a4607266d",
+        "type": "tab",
+        "label": "HTTP",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "599740b7.efde9",
+        "type": "http response",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 380,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1618a829.76f638",
+        "type": "json",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [
+                "d0089cc7.d25ac"
+            ]
+        ]
+    },
+    {
+        "id": "c7410fa2.1c2fa",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "75a22f74.f1aba",
+        "type": "ui_text",
+        "z": "b96a3b3a4607266d",
+        "group": "2b7ac01b.fc984",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Sensor Name",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1320,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "1c8f9093.8bc2bf",
+        "type": "ui_gauge",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 3,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Acc X Gauge",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "38",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1310,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "a5bd2706.54e108",
+        "type": "ui_gauge",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 9,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Acc Y Gauge",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#0080ff",
+            "#0062c4",
+            "#002f5e"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1310,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "105ac2cc.7b3cfd",
+        "type": "ui_gauge",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 15,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Acc Z Gauge",
+        "label": "hPa",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1200",
+        "colors": [
+            "#b366ff",
+            "#8000ff",
+            "#440088"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1310,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "d0089cc7.d25ac",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "name": "JSON or URL Encoded",
+        "func": "var msg0 = { payload: msg.payload.api_key };\nvar msg1 = { payload: msg.payload.sensor };\nvar msg2 = { payload: msg.payload.value1 };\nvar msg3 = { payload: msg.payload.value2 };\nvar msg4 = { payload: msg.payload.value3 };\n\nreturn [msg0, msg1, msg2, msg3, msg4];",
+        "outputs": 5,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 460,
+        "wires": [
+            [
+                "c7410fa2.1c2fa"
+            ],
+            [
+                "75a22f74.f1aba"
+            ],
+            [
+                "1c8f9093.8bc2bf",
+                "8d60a1c2d89608fc"
+            ],
+            [
+                "a5bd2706.54e108",
+                "990195f16213bce4"
+            ],
+            [
+                "105ac2cc.7b3cfd",
+                "699a6287ee8c2aa5"
+            ]
+        ]
+    },
+    {
+        "id": "5d9ab0d2.66b92",
+        "type": "http in",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "url": "update-sensor",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 391,
+        "wires": [
+            [
+                "599740b7.efde9",
+                "c7410fa2.1c2fa",
+                "1618a829.76f638"
+            ]
+        ]
+    },
+    {
+        "id": "7f5cf345.63f56c",
+        "type": "http response",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 500,
+        "y": 71,
+        "wires": []
+    },
+    {
+        "id": "6530621.95b429c",
+        "type": "http in",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "url": "/get-sensor",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 251,
+        "wires": [
+            [
+                "9471d1a0.68588"
+            ]
+        ]
+    },
+    {
+        "id": "5ddc9f47.4b555",
+        "type": "http response",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 500,
+        "y": 211,
+        "wires": []
+    },
+    {
+        "id": "9471d1a0.68588",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "func": "msg.payload = {\"value1\":24.25, \"value2\":49.54, \"value3\":1005.14};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 251,
+        "wires": [
+            [
+                "5ddc9f47.4b555",
+                "13aea59.7430e5a"
+            ]
+        ]
+    },
+    {
+        "id": "13aea59.7430e5a",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 279,
+        "wires": []
+    },
+    {
+        "id": "e71c7a7d.e7c598",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 510,
+        "y": 151,
+        "wires": []
+    },
+    {
+        "id": "c7807102.3f433",
+        "type": "http in",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "url": "/update-sensor",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 111,
+        "wires": [
+            [
+                "60410cde.562a34"
+            ]
+        ]
+    },
+    {
+        "id": "60410cde.562a34",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "func": "msg.payload = msg.payload.temperature;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 111,
+        "wires": [
+            [
+                "e71c7a7d.e7c598",
+                "7f5cf345.63f56c"
+            ]
+        ]
+    },
+    {
+        "id": "8d60a1c2d89608fc",
+        "type": "ui_chart",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 4,
+        "width": 8,
+        "height": 4,
+        "label": "Acc X",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1290,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "990195f16213bce4",
+        "type": "ui_chart",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 10,
+        "width": 8,
+        "height": 4,
+        "label": "Acc Y",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1290,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "699a6287ee8c2aa5",
+        "type": "ui_chart",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 16,
+        "width": 8,
+        "height": 4,
+        "label": "Acc Z",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1290,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c0c5a67a8bb3d82",
+        "type": "inject",
+        "z": "b96a3b3a4607266d",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 760,
+        "wires": [
+            [
+                "d09dbb8c4c9d3050"
+            ]
+        ]
+    },
+    {
+        "id": "d09dbb8c4c9d3050",
+        "type": "http request",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://192.168.169.146",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 330,
+        "y": 780,
+        "wires": [
+            [
+                "cb15a4dd28f5cd84",
+                "cc6fb9c1568a92f3"
+            ]
+        ]
+    },
+    {
+        "id": "cb15a4dd28f5cd84",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "name": "debug 35",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "cc6fb9c1568a92f3",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "name": "function 7",
+        "func": "// Input string\nlet input = msg.payload\n\n// Split the input string by \"&\" to get individual key-value pairs\nlet pairs = input.split(\"&\");\n\n// Create an object to store the variables\nlet data = {};\n\n// Iterate over each pair and split by \"=\" to separate keys and values\npairs.forEach(pair => {\n    let [key, value] = pair.split(\"=\");\n    data[key] = value;\n});\n\n// Assign the variables from the data object\nlet api_key = data.api_key;\nlet sensor = data.sensor;\nlet acc_x = parseFloat(data.acc_x); // Convert to float for numerical values\nlet acc_y = parseFloat(data.acc_y); // Convert to float for numerical values\nlet acc_z = parseFloat(data.acc_z); // Convert to float for numerical values\n\n// Optionally, set the variables as part of the message payload\nmsg.payload = {\n    api_key: api_key,\n    sensor: sensor,\n    acc_x: acc_x,\n    acc_y: acc_y,\n    acc_z: acc_z\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1020,
+        "wires": [
+            [
+                "c438bccca1aaa61a"
+            ]
+        ]
+    },
+    {
+        "id": "c438bccca1aaa61a",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "name": "JSON or URL Encoded",
+        "func": "var msg0 = { payload: msg.payload.api_key };\nvar msg1 = { payload: msg.payload.sensor };\nvar msg2 = { payload: msg.payload.acc_x };\nvar msg3 = { payload: msg.payload.acc_y };\nvar msg4 = { payload: msg.payload.acc_z };\n\nreturn [msg0, msg1, msg2, msg3, msg4];",
+        "outputs": 5,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1020,
+        "wires": [
+            [
+                "cb15a4dd28f5cd84"
+            ],
+            [
+                "75a22f74.f1aba"
+            ],
+            [
+                "8d60a1c2d89608fc",
+                "1c8f9093.8bc2bf"
+            ],
+            [
+                "990195f16213bce4",
+                "a5bd2706.54e108"
+            ],
+            [
+                "699a6287ee8c2aa5",
+                "105ac2cc.7b3cfd"
+            ]
+        ]
+    },
+    {
+        "id": "4516f4dcdbee9fc9",
+        "type": "inject",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 1140,
+        "wires": [
+            [
+                "8ba12cfcc3389a8c"
+            ]
+        ]
+    },
+    {
+        "id": "8ba12cfcc3389a8c",
+        "type": "http request",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://192.168.169.53",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 1160,
+        "wires": [
+            [
+                "798107d3ffe6421a"
+            ]
+        ]
+    },
+    {
+        "id": "798107d3ffe6421a",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "name": "function 8",
+        "func": "// Input string\nlet input = msg.payload\n\n// Split the input string by \"&\" to get individual key-value pairs\nlet pairs = input.split(\"&\");\n\n// Create an object to store the variables\nlet data = {};\n\n// Iterate over each pair and split by \"=\" to separate keys and values\npairs.forEach(pair => {\n    let [key, value] = pair.split(\"=\");\n    data[key] = value;\n});\n\n// Assign the variables from the data object\nlet api_key = data.api_key;\nlet sensor = data.sensor;\nlet count = parseFloat(data.count); // Convert to float for numerical values\n\n\n// Optionally, set the variables as part of the message payload\nmsg.payload = {\n    api_key: api_key,\n    sensor: sensor,\n    count: count,\n\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 1160,
+        "wires": [
+            [
+                "a670a2cb693198ee"
+            ]
+        ]
+    },
+    {
+        "id": "a670a2cb693198ee",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "name": "JSON or URL Encoded",
+        "func": "var msg0 = { payload: msg.payload.api_key };\nvar msg1 = { payload: msg.payload.sensor };\nvar msg2 = { payload: msg.payload.count };\n\n\nreturn [msg0, msg1, msg2];",
+        "outputs": 5,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1160,
+        "wires": [
+            [],
+            [],
+            [
+                "7b51ac800d369808"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7b51ac800d369808",
+        "type": "ui_gauge",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 21,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Pulse Count",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "38",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1290,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "e1b23c85ef117337",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 2,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "3ac67d12c0affb54",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 5,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "0ae15c6de83c9b17",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 6,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "024dd41e2b257591",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 7,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "32b8b55f5221cc84",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 8,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "ecdd9135f646b7b4",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 11,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "4105798c51c9ae0a",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 12,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "e9df01598af45d80",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 13,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "e5b133127b9d4063",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 14,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "d157aa1ae1658cc8",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 17,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "b1237da4b9857dd5",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 18,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "0576fcc8003549a3",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 19,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "6550120c7e3a469a",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 20,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "11ade36df6159904",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 22,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "25b6db48d5f9cbb3",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 23,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "457404b3cf839157",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 24,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "dd240c8a5b142a51",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 25,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "2b7ac01b.fc984",
+        "type": "ui_group",
+        "name": "SENSORS",
+        "tab": "99ab8dc5.f435c",
+        "order": 1,
+        "disp": true,
+        "width": 23,
+        "collapse": false
+    },
+    {
+        "id": "99ab8dc5.f435c",
+        "type": "ui_tab",
+        "name": "HTTP",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
