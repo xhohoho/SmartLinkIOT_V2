@@ -83,7 +83,7 @@ void setup() {
   // Route for root / web page
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
     // String response = "Sensor Value: " + String(sensorValue);
-    String response = "api_key=mkaa2009&sensor=COUNTESP32-147&count="+ String(finalCount);
+    String response = "api_key=uktp&sensor=COUNTESP32-147&count="+ String(finalCount);
     request->send(200, "text/plain", response);
   });
 
