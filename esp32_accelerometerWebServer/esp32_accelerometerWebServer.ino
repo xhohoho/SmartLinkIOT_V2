@@ -9,8 +9,11 @@
 #define FPSerial mySerial
 
 // Replace with your network credentials
-const char* ssid = "Cayrol";
-const char* password = "blok-f1108";
+// const char* ssid = "Cayrol";
+// const char* password = "blok-f1108";
+const char* ssid = "Pejabat BKPT Sg.Buloh";
+const char* password = "12345678ae";
+
 
 IPAddress staticIP(192, 168, 169, 146);
 IPAddress gateway(192, 168, 169, 27);
@@ -48,7 +51,7 @@ void wifiSetup(){
 }
 
 void setup(){
-  Serial.begin(9600);
+  Serial.begin(115200);
   // Define pin modes for TX and RX
   pinMode(rxPin, INPUT);
   pinMode(txPin, OUTPUT);

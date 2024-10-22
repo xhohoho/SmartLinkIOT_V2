@@ -5,8 +5,9 @@
 #define PULSE_SENSOR_PIN 26  // Change this to your actual GPIO pin
 
 // Replace with your network credentials
-const char* ssid = "Cayrol";
-const char* password = "blok-f1108";
+const char* ssid = "LGMPTL";
+const char* password = "12345678ae";
+const char* version = "Proximity version 4";
 
 IPAddress staticIP(192, 168, 169, 147);
 IPAddress gateway(192, 168, 169, 27);
@@ -69,7 +70,9 @@ void IRAM_ATTR pulse() {
 }
 
 void setup() {
+  
   Serial.begin(115200);
+  Serial.println(version);
   
   // Configure the pulse sensor pin as input
   pinMode(PULSE_SENSOR_PIN, INPUT_PULLUP);
@@ -93,6 +96,26 @@ void setup() {
 
 void loop() {
   // Example: Print the pulse count every second
+  // static unsigned long lastPrintTime = 0;
+  // unsigned long currentTime = millis();
+
+  // if (currentTime - lastPrintTime >= 10000) {
+  //   Serial.print("Pulse Count: ");
+  //   Serial.println(pulseCount);
+  //   finalCount = pulseCount;
+
+  //   // Reset the count after printing if needed
+  //   pulseCount = 0;
+  //   lastPrintTime = currentTime;
+  // }
+  read_pulse();
+  // on_off(); // for test only
+  delay(100);
+}
+
+
+void read_pulse()
+{
   static unsigned long lastPrintTime = 0;
   unsigned long currentTime = millis();
 
@@ -105,5 +128,11 @@ void loop() {
     pulseCount = 0;
     lastPrintTime = currentTime;
   }
-  delay(100);
+
+}
+
+void on_off()
+{
+  buttonState = digitalRead(PULSE_SENSOR_PIN);
+  Serial.println(buttonState);
 }
