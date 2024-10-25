@@ -7,7 +7,8 @@
 // Replace with your network credentials
 const char* ssid = "LGMPTL";
 const char* password = "12345678ae";
-const char* version = "Proximity version 4";
+const String version = "PROXIMITY4";
+
 
 IPAddress staticIP(192, 168, 169, 147);
 IPAddress gateway(192, 168, 169, 27);
@@ -86,7 +87,7 @@ void setup() {
   // Route for root / web page
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
     // String response = "Sensor Value: " + String(sensorValue);
-    String response = "api_key=uktp&sensor=COUNTESP32-147&count="+ String(finalCount);
+    String response = "api_key=uktp&sensor=" + version + "&count="+ String(finalCount);
     request->send(200, "text/plain", response);
   });
 

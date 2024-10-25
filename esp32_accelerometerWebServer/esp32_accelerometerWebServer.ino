@@ -11,8 +11,9 @@
 // Replace with your network credentials
 // const char* ssid = "Cayrol";
 // const char* password = "blok-f1108";
-const char* ssid = "Pejabat BKPT Sg.Buloh";
+const char* ssid = "LGMPTL";
 const char* password = "12345678ae";
+const String version ="esp32_accelerometerWebServer";
 
 
 IPAddress staticIP(192, 168, 169, 146);
@@ -64,7 +65,7 @@ void setup(){
   // Route for root / web page
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
     // String response = "Sensor Value: " + String(sensorValue);
-    String response = "api_key=tPmAT5Ab3j7F9&sensor=DFROBOT&acc_x="+ String(sensor.Acc.X) +"&acc_y=" + String(sensor.Acc.Y) +"&acc_z="+ String(sensor.Acc.Z);
+    String response = "api_key=tPmAT5Ab3j7F9&sensor="+ version + "&acc_x="+ String(sensor.Acc.X) +"&acc_y=" + String(sensor.Acc.Y) +"&acc_z="+ String(sensor.Acc.Z);
     request->send(200, "text/plain", response);
   });
 
