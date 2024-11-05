@@ -15,8 +15,8 @@
 
 // Network credentials and version
 const String version = "ESP-RPMeter_v1.5.0";
-const char* ssid = "LGMPTL";
-const char* password = "12345678ae";
+const char* ssid = " ";
+const char* password = " ";
 
 // Create an AsyncWebServer object on port 80
 AsyncWebServer server(80);
