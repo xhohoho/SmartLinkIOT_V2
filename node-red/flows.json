@@ -1,0 +1,17 @@
+[
+    {
+        "id": "65d5ddeb091fd876",
+        "type": "ArcGIS-Rest-Feature-Layer",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "Create Record at RRIM Geo Rubber",
+        "arcgisType": "addFeatures",
+        "x": 1150,
+        "y": 1100,
+        "wires": [
+            [
+                "7df881440a074150"
+            ]
+        ]
+    }
+]
