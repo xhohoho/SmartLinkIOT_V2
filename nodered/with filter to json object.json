@@ -1,0 +1,100 @@
+[
+    {
+        "id": "026c647f3cfd2c6e",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "32c4c31a43a79998",
+        "type": "inject",
+        "z": "026c647f3cfd2c6e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "2e9e0fb40a8743e8"
+            ]
+        ]
+    },
+    {
+        "id": "2e9e0fb40a8743e8",
+        "type": "http request",
+        "z": "026c647f3cfd2c6e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://esp32nodetest.local",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 40,
+        "wires": [
+            [
+                "3cd2559398294349"
+            ]
+        ]
+    },
+    {
+        "id": "93891d90ca92ce57",
+        "type": "debug",
+        "z": "026c647f3cfd2c6e",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "3cd2559398294349",
+        "type": "function",
+        "z": "026c647f3cfd2c6e",
+        "name": "function 2",
+        "func": "// Input string\nlet input = msg.payload\n\n// Split the input string by \"&\" to get individual key-value pairs\nlet pairs = input.split(\"&\");\n\n// Create an object to store the variables\nlet data = {};\n\nvar dto = new Date();\nvar dt = dto.toLocaleString(\"sv-SE\");\n\n// Iterate over each pair and split by \"=\" to separate keys and values\npairs.forEach(pair => {\n    let [key, value] = pair.split(\"=\");\n    data[key] = value;\n});\n\n// Assign the variables from the data object\nlet api_key = data.api_key;\nlet sensor = data.sensor;\nlet count = parseFloat(data.count); // Convert to float for numerical values\ncount = count * 6;\nlet sensor_name = \"Rear_rotor\";\n\n// Optionally, set the variables as part of the message payload\nmsg.payload = {\n    api_key: api_key,\n    sensor: sensor,\n    count: count,\n    time_stamp : dt,\n    sensor_name : sensor_name,\n    real_timestamp: dto.getTime()\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 40,
+        "wires": [
+            [
+                "93891d90ca92ce57"
+            ]
+        ]
+    }
+]
