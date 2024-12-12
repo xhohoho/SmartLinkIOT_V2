@@ -6,7 +6,7 @@
 #define MYLED 2  // Built-in LED Pin
 
 const char* ssid = "LGMPTL";
-const char* password = "12345678ae";
+const char* password = "****";
 const char* servername = "cmms.local";
 const char* hostname = "esp32nodetest";
 int i=0;
