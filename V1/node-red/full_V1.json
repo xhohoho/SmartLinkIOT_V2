@@ -1,0 +1,2625 @@
+[
+    {
+        "id": "cc108f7240ab2d29",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b96a3b3a4607266d",
+        "type": "tab",
+        "label": "Smart Link Dashboard v1.0.0",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c4c629fb76a04c6c",
+        "type": "group",
+        "z": "b96a3b3a4607266d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b908da6eb3c098db",
+            "bcfb7c20a5e4e416",
+            "8fa3b77abe1d3ab6",
+            "f8d820c6bbb04957",
+            "39d903fa0319e459",
+            "33dd51c191eb9e2b",
+            "97c154aa9c47d574",
+            "fdfe34af034a872a",
+            "f4b993cf0a4451e5",
+            "bb0b61a2258020c4",
+            "9897a2ae9bf4a9da",
+            "a830a5a242d56140",
+            "e82244042200c714",
+            "692c7180730362d0",
+            "0a7677d6c731eee8",
+            "975f09a975fca141",
+            "c540f39056aae62b",
+            "794745a11a65c0a1",
+            "d4c71605f910c89e",
+            "37ff9f408245679c"
+        ],
+        "x": 54,
+        "y": 1639,
+        "w": 1552,
+        "h": 302
+    },
+    {
+        "id": "07fc87fbc0130a14",
+        "type": "group",
+        "z": "b96a3b3a4607266d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "4516f4dcdbee9fc9",
+            "8ba12cfcc3389a8c",
+            "798107d3ffe6421a",
+            "a670a2cb693198ee",
+            "c937dbb3abd539a8",
+            "b2a8762e82fb3824",
+            "aebbcea881891261",
+            "7b51ac800d369808",
+            "4c1d88103345eaa3",
+            "09c7dbc233ea6e51",
+            "6fad83a7225b0075",
+            "a78574bb626ef7f5",
+            "7bab7dfb9b6ac189",
+            "65d5ddeb091fd876",
+            "7df881440a074150"
+        ],
+        "x": 34,
+        "y": 1059,
+        "w": 1532,
+        "h": 262
+    },
+    {
+        "id": "badb9384d0f932ea",
+        "type": "group",
+        "z": "b96a3b3a4607266d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7a844192c5fe01ed",
+            "4f29a2524b563681",
+            "3500ab8d19dc66d0",
+            "c8151af11e4bb86e",
+            "aac8088f8e47b7f4",
+            "4f1a5590598a6a0a",
+            "71301b2124f4a4a3",
+            "8445021a892a44fc",
+            "a35b8bde28daa973",
+            "5b7c834a2fd50ded",
+            "ca531690601ff9c3",
+            "c34e7c76d880926c",
+            "f55c775fad52df2f"
+        ],
+        "x": 34,
+        "y": 1339,
+        "w": 1592,
+        "h": 262
+    },
+    {
+        "id": "346ec01539113abf",
+        "type": "group",
+        "z": "b96a3b3a4607266d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3c0c5a67a8bb3d82",
+            "d09dbb8c4c9d3050",
+            "cb15a4dd28f5cd84",
+            "cc6fb9c1568a92f3",
+            "c438bccca1aaa61a",
+            "75a22f74.f1aba",
+            "1c8f9093.8bc2bf",
+            "a5bd2706.54e108",
+            "105ac2cc.7b3cfd",
+            "8d60a1c2d89608fc",
+            "990195f16213bce4",
+            "699a6287ee8c2aa5",
+            "bd9e28a129b4fe1a",
+            "806a3473356bd4d6",
+            "706759631ed262bf",
+            "f3b54d74e096eeb6",
+            "b1c49a37037147e3",
+            "be2677e52ab362e8",
+            "f9e56bac296a654b",
+            "6380ee27e7c4b798"
+        ],
+        "x": 34,
+        "y": 539,
+        "w": 1412,
+        "h": 442
+    },
+    {
+        "id": "99ab8dc5.f435c",
+        "type": "ui_tab",
+        "name": "HTTP",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2b7ac01b.fc984",
+        "type": "ui_group",
+        "name": "SENSORS",
+        "tab": "99ab8dc5.f435c",
+        "order": 1,
+        "disp": true,
+        "width": 23,
+        "collapse": false
+    },
+    {
+        "id": "e7550745d0d94991",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1fa19e9c5413fd7b",
+        "type": "serial-port",
+        "name": "ESP",
+        "serialport": "/dev/ttyUSB1",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "0b84400a9e1ab140",
+        "type": "serial-port",
+        "name": "Balance",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "2400",
+        "databits": "7",
+        "parity": "even",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "15f1a036b79b32a9",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 2,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "710528e8f5afdc2d",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 6,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "8f48b28467745821",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 7,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "2c63dcdc34f3271f",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 8,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "39c7674bd7167abb",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 9,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "b2fab5fc1562fd26",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 13,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "970a25d5db8f1c71",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 15,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "1160db9fa24ad921",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 16,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "5cf0e57b96da5bba",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 17,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "553c8e7546d55927",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 20,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "ac793ba71c2daba5",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 22,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "9bcc260c43d4d0a8",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 23,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "f13fe008c16c3b0d",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 24,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "6fec78ebfde5f937",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 26,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "e60ae13b5a350d1f",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 27,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "8e9070f726b77f6c",
+        "type": "ui_spacer",
+        "z": "b96a3b3a4607266d",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 29,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "599740b7.efde9",
+        "type": "http response",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 380,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1618a829.76f638",
+        "type": "json",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [
+                "d0089cc7.d25ac"
+            ]
+        ]
+    },
+    {
+        "id": "c7410fa2.1c2fa",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d0089cc7.d25ac",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "name": "JSON or URL Encoded",
+        "func": "var msg0 = { payload: msg.payload.api_key };\nvar msg1 = { payload: msg.payload.sensor };\nvar msg2 = { payload: msg.payload.value1 };\nvar msg3 = { payload: msg.payload.value2 };\nvar msg4 = { payload: msg.payload.value3 };\n\nreturn [msg0, msg1, msg2, msg3, msg4];",
+        "outputs": 5,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 460,
+        "wires": [
+            [
+                "c7410fa2.1c2fa"
+            ],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5d9ab0d2.66b92",
+        "type": "http in",
+        "z": "b96a3b3a4607266d",
+        "d": true,
+        "name": "",
+        "url": "update-sensor",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 391,
+        "wires": [
+            [
+                "599740b7.efde9",
+                "c7410fa2.1c2fa",
+                "1618a829.76f638"
+            ]
+        ]
+    },
+    {
+        "id": "7f5cf345.63f56c",
+        "type": "http response",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 500,
+        "y": 71,
+        "wires": []
+    },
+    {
+        "id": "6530621.95b429c",
+        "type": "http in",
+        "z": "b96a3b3a4607266d",
+        "d": true,
+        "name": "",
+        "url": "/get-sensor",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 251,
+        "wires": [
+            [
+                "9471d1a0.68588"
+            ]
+        ]
+    },
+    {
+        "id": "5ddc9f47.4b555",
+        "type": "http response",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 500,
+        "y": 211,
+        "wires": []
+    },
+    {
+        "id": "9471d1a0.68588",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "func": "msg.payload = {\"value1\":24.25, \"value2\":49.54, \"value3\":1005.14};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 251,
+        "wires": [
+            [
+                "5ddc9f47.4b555",
+                "13aea59.7430e5a"
+            ]
+        ]
+    },
+    {
+        "id": "13aea59.7430e5a",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 279,
+        "wires": []
+    },
+    {
+        "id": "e71c7a7d.e7c598",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 510,
+        "y": 151,
+        "wires": []
+    },
+    {
+        "id": "c7807102.3f433",
+        "type": "http in",
+        "z": "b96a3b3a4607266d",
+        "d": true,
+        "name": "",
+        "url": "/update-sensor",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 111,
+        "wires": [
+            [
+                "60410cde.562a34"
+            ]
+        ]
+    },
+    {
+        "id": "60410cde.562a34",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "name": "",
+        "func": "msg.payload = msg.payload.temperature;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 111,
+        "wires": [
+            [
+                "e71c7a7d.e7c598",
+                "7f5cf345.63f56c"
+            ]
+        ]
+    },
+    {
+        "id": "3c0c5a67a8bb3d82",
+        "type": "inject",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 660,
+        "wires": [
+            [
+                "d09dbb8c4c9d3050"
+            ]
+        ]
+    },
+    {
+        "id": "d09dbb8c4c9d3050",
+        "type": "http request",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://192.168.1.166",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 250,
+        "y": 760,
+        "wires": [
+            [
+                "cb15a4dd28f5cd84",
+                "cc6fb9c1568a92f3"
+            ]
+        ]
+    },
+    {
+        "id": "cb15a4dd28f5cd84",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "debug 35",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "cc6fb9c1568a92f3",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "function 7",
+        "func": "var dt = new Date();\ndt = dt.toLocaleString(\"sv-SE\");\n\n\n// Input string\nlet input = msg.payload\n\n// Split the input string by \"&\" to get individual key-value pairs\nlet pairs = input.split(\"&\");\n\n// Create an object to store the variables\nlet data = {};\n\n// Iterate over each pair and split by \"=\" to separate keys and values\npairs.forEach(pair => {\n    let [key, value] = pair.split(\"=\");\n    data[key] = value;\n});\n\n// Assign the variables from the data object\nlet api_key = data.api_key;\nlet sensor = data.sensor;\nlet acc_x = parseFloat(data.acc_x); // Convert to float for numerical values\nlet acc_y = parseFloat(data.acc_y); // Convert to float for numerical values\nlet acc_z = parseFloat(data.acc_z); // Convert to float for numerical values\n\n// Optionally, set the variables as part of the message payload\nmsg.payload = {\n    api_key: api_key,\n    sensor: sensor,\n    acc_x: acc_x,\n    acc_y: acc_y,\n    acc_z: acc_z,\n    time_stamp : dt,\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 760,
+        "wires": [
+            [
+                "c438bccca1aaa61a",
+                "806a3473356bd4d6",
+                "f9e56bac296a654b"
+            ]
+        ]
+    },
+    {
+        "id": "c438bccca1aaa61a",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "JSON or URL Encoded",
+        "func": "var msg0 = { payload: msg.payload.api_key };\nvar msg1 = { payload: msg.payload.sensor };\nvar msg2 = { payload: msg.payload.acc_x };\nvar msg3 = { payload: msg.payload.acc_y };\nvar msg4 = { payload: msg.payload.acc_z };\n\nreturn [msg0, msg1, msg2, msg3, msg4];",
+        "outputs": 5,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 780,
+        "wires": [
+            [],
+            [
+                "75a22f74.f1aba"
+            ],
+            [
+                "8d60a1c2d89608fc",
+                "1c8f9093.8bc2bf"
+            ],
+            [
+                "990195f16213bce4",
+                "a5bd2706.54e108"
+            ],
+            [
+                "699a6287ee8c2aa5",
+                "105ac2cc.7b3cfd"
+            ]
+        ]
+    },
+    {
+        "id": "4516f4dcdbee9fc9",
+        "type": "inject",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1160,
+        "wires": [
+            [
+                "8ba12cfcc3389a8c"
+            ]
+        ]
+    },
+    {
+        "id": "8ba12cfcc3389a8c",
+        "type": "http request",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://192.168.1.172",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 1180,
+        "wires": [
+            [
+                "798107d3ffe6421a",
+                "c937dbb3abd539a8"
+            ]
+        ]
+    },
+    {
+        "id": "798107d3ffe6421a",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "function 8",
+        "func": "// Input string\nlet input = msg.payload\n\n// Split the input string by \"&\" to get individual key-value pairs\nlet pairs = input.split(\"&\");\n\n// Create an object to store the variables\nlet data = {};\n\nvar dt = new Date();\ndt = dt.toLocaleString(\"sv-SE\");\n\n// Iterate over each pair and split by \"=\" to separate keys and values\npairs.forEach(pair => {\n    let [key, value] = pair.split(\"=\");\n    data[key] = value;\n});\n\n// Assign the variables from the data object\nlet api_key = data.api_key;\nlet sensor = data.sensor;\nlet count = parseFloat(data.count); // Convert to float for numerical values\ncount = count * 6;\nlet sensor_name = \"Front_rotor\";\n\n// Optionally, set the variables as part of the message payload\nmsg.payload = {\n    api_key: api_key,\n    sensor: sensor,\n    count: count,\n    time_stamp : dt,\n    sensor_name : sensor_name,\n\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1180,
+        "wires": [
+            [
+                "a670a2cb693198ee",
+                "b2a8762e82fb3824",
+                "a78574bb626ef7f5"
+            ]
+        ]
+    },
+    {
+        "id": "a670a2cb693198ee",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "JSON or URL Encoded",
+        "func": "var msg0 = { payload: msg.payload.api_key };\nvar msg1 = { payload: msg.payload.sensor };\nvar msg2 = { payload: msg.payload.count };\n\n\nreturn [msg0, msg1, msg2];",
+        "outputs": 5,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1180,
+        "wires": [
+            [],
+            [
+                "09c7dbc233ea6e51"
+            ],
+            [
+                "6fad83a7225b0075"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "75a22f74.f1aba",
+        "type": "ui_text",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "group": "2b7ac01b.fc984",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Firmware ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1300,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "1c8f9093.8bc2bf",
+        "type": "ui_gauge",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 3,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Acc X Gauge",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "350",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1310,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "a5bd2706.54e108",
+        "type": "ui_gauge",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 10,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Acc Y Gauge",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "350",
+        "colors": [
+            "#0080ff",
+            "#0062c4",
+            "#002f5e"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1310,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "105ac2cc.7b3cfd",
+        "type": "ui_gauge",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 18,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Acc Z Gauge",
+        "label": "hPa",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "350",
+        "colors": [
+            "#b366ff",
+            "#8000ff",
+            "#440088"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1310,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "7b51ac800d369808",
+        "type": "ui_gauge",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 5,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Front Rotor",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "250",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1470,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "8d60a1c2d89608fc",
+        "type": "ui_chart",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 4,
+        "width": 8,
+        "height": 4,
+        "label": "Acc X",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1290,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "990195f16213bce4",
+        "type": "ui_chart",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 11,
+        "width": 8,
+        "height": 4,
+        "label": "Acc Y",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1290,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "699a6287ee8c2aa5",
+        "type": "ui_chart",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 19,
+        "width": 8,
+        "height": 4,
+        "label": "Acc Z",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1290,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b908da6eb3c098db",
+        "type": "serial in",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "Balance",
+        "serial": "0b84400a9e1ab140",
+        "x": 140,
+        "y": 1760,
+        "wires": [
+            [
+                "8fa3b77abe1d3ab6"
+            ]
+        ]
+    },
+    {
+        "id": "bcfb7c20a5e4e416",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "debug 36",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "8fa3b77abe1d3ab6",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "function 9",
+        "func": "var dto = new Date();\nvar dt = dto.toLocaleString(\"sv-SE\");\n\n\n// input string \nvar inputString = msg.payload;\n\nvar regex = /[-+]?\\d*\\.?\\d+/;\n\nvar match = inputString.match(regex);\n\nif (match) {\n    var number = match[0];\n    //node.send({payload: number});\n}\n\nmsg.payload = {\n    time_stamp : dt,\n    weight : parseFloat(number),\n    real_timestamp: dto.getTime()\n};\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1760,
+        "wires": [
+            [
+                "fdfe34af034a872a",
+                "bb0b61a2258020c4",
+                "9897a2ae9bf4a9da"
+            ]
+        ]
+    },
+    {
+        "id": "f8d820c6bbb04957",
+        "type": "ui_text",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "group": "2b7ac01b.fc984",
+        "order": 25,
+        "width": 14,
+        "height": 3,
+        "name": "",
+        "label": "Weight",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "Courier,monospace",
+        "fontSize": "80",
+        "color": "#000000",
+        "x": 830,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "c937dbb3abd539a8",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "debug 37",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "7a844192c5fe01ed",
+        "type": "inject",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1440,
+        "wires": [
+            [
+                "4f29a2524b563681"
+            ]
+        ]
+    },
+    {
+        "id": "4f29a2524b563681",
+        "type": "http request",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://192.168.1.178",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 1460,
+        "wires": [
+            [
+                "3500ab8d19dc66d0",
+                "c8151af11e4bb86e"
+            ]
+        ]
+    },
+    {
+        "id": "3500ab8d19dc66d0",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "function 10",
+        "func": "// Input string\nlet input = msg.payload\n\n// Split the input string by \"&\" to get individual key-value pairs\nlet pairs = input.split(\"&\");\n\n// Create an object to store the variables\nlet data = {};\n\nvar dto = new Date();\nvar dt = dto.toLocaleString(\"sv-SE\");\n\n// Iterate over each pair and split by \"=\" to separate keys and values\npairs.forEach(pair => {\n    let [key, value] = pair.split(\"=\");\n    data[key] = value;\n});\n\n// Assign the variables from the data object\nlet api_key = data.api_key;\nlet sensor = data.sensor;\nlet count = parseFloat(data.count); // Convert to float for numerical values\ncount = count * 6;\nlet sensor_name = \"Rear_rotor\";\n\n// Optionally, set the variables as part of the message payload\nmsg.payload = {\n    api_key: api_key,\n    sensor: sensor,\n    count: count,\n    time_stamp : dt,\n    sensor_name : sensor_name,\n    real_timestamp: dto.getTime()\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1460,
+        "wires": [
+            [
+                "aac8088f8e47b7f4",
+                "a35b8bde28daa973",
+                "5b7c834a2fd50ded"
+            ]
+        ]
+    },
+    {
+        "id": "71301b2124f4a4a3",
+        "type": "ui_gauge",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 14,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Rear Rotor",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "250",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1250,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "c8151af11e4bb86e",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "debug 38",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "b2a8762e82fb3824",
+        "type": "csv",
+        "z": "b96a3b3a4607266d",
+        "d": true,
+        "g": "07fc87fbc0130a14",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "time_stamp, sensor, sensor_name, count",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 830,
+        "y": 1280,
+        "wires": [
+            [
+                "aebbcea881891261"
+            ]
+        ]
+    },
+    {
+        "id": "aebbcea881891261",
+        "type": "file",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "",
+        "filename": "/home/admin/Documents/Data/sensor_1.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1170,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aac8088f8e47b7f4",
+        "type": "csv",
+        "z": "b96a3b3a4607266d",
+        "d": true,
+        "g": "badb9384d0f932ea",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "time_stamp, sensor, sensor_name, count",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 890,
+        "y": 1560,
+        "wires": [
+            [
+                "4f1a5590598a6a0a"
+            ]
+        ]
+    },
+    {
+        "id": "4f1a5590598a6a0a",
+        "type": "file",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "",
+        "filename": "/home/admin/Documents/Data/sensor_2.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1170,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bd9e28a129b4fe1a",
+        "type": "comment",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "#Vibration",
+        "info": "",
+        "x": 140,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "4c1d88103345eaa3",
+        "type": "comment",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "Front Rotor",
+        "info": "",
+        "x": 150,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "8445021a892a44fc",
+        "type": "comment",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "Rear Rotor",
+        "info": "",
+        "x": 120,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "39d903fa0319e459",
+        "type": "comment",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "Balance",
+        "info": "",
+        "x": 140,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "806a3473356bd4d6",
+        "type": "csv",
+        "z": "b96a3b3a4607266d",
+        "d": true,
+        "g": "346ec01539113abf",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "time_stamp, sensor, acc_x, acc_y, acc_z",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 610,
+        "y": 940,
+        "wires": [
+            [
+                "706759631ed262bf"
+            ]
+        ]
+    },
+    {
+        "id": "706759631ed262bf",
+        "type": "file",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "",
+        "filename": "/home/admin/Documents/Data/accelerometer.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 930,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "33dd51c191eb9e2b",
+        "type": "ArcGIS-Rest-Feature-Layer",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "Create Record at RRIM Geo Rubber",
+        "arcgisType": "addFeatures",
+        "x": 950,
+        "y": 1680,
+        "wires": [
+            [
+                "97c154aa9c47d574",
+                "692c7180730362d0",
+                "975f09a975fca141"
+            ]
+        ]
+    },
+    {
+        "id": "97c154aa9c47d574",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "Bal Weight FS Response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "a35b8bde28daa973",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "JSON or URL Encoded",
+        "func": "var msg0 = { payload: msg.payload.api_key };\nvar msg1 = { payload: msg.payload.sensor };\nvar msg2 = { payload: msg.payload.count };\n\n\nreturn [msg0, msg1, msg2];",
+        "outputs": 5,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1460,
+        "wires": [
+            [],
+            [
+                "84a477f356504317"
+            ],
+            [
+                "71301b2124f4a4a3"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fdfe34af034a872a",
+        "type": "function",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "JSON or URL Encoded",
+        "func": "var msg0 = { payload: msg.payload.weight };\n// var msg1 = { payload: msg.payload.sensor };\n// var msg2 = { payload: msg.payload.count };\n\n\nreturn [msg0];",
+        "outputs": 5,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1820,
+        "wires": [
+            [
+                "f8d820c6bbb04957",
+                "bcfb7c20a5e4e416"
+            ],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bb0b61a2258020c4",
+        "type": "csv",
+        "z": "b96a3b3a4607266d",
+        "d": true,
+        "g": "c4c629fb76a04c6c",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "time_stamp, weight",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 450,
+        "y": 1900,
+        "wires": [
+            [
+                "f4b993cf0a4451e5"
+            ]
+        ]
+    },
+    {
+        "id": "f4b993cf0a4451e5",
+        "type": "file",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "",
+        "filename": "/home/admin/Documents/Data/weight.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 820,
+        "y": 1900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "09c7dbc233ea6e51",
+        "type": "ui_text",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "group": "2b7ac01b.fc984",
+        "order": 12,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Firmware",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1460,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "84a477f356504317",
+        "type": "ui_text",
+        "z": "b96a3b3a4607266d",
+        "group": "2b7ac01b.fc984",
+        "order": 21,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Firmware",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1235,
+        "y": 1417,
+        "wires": []
+    },
+    {
+        "id": "9897a2ae9bf4a9da",
+        "type": "change",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "arcgis.authentication.portal",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/portal/sharing/rest",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.username",
+                "pt": "msg",
+                "to": "uitelgm",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.password",
+                "pt": "msg",
+                "to": "rrim@IPER889",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.client",
+                "pt": "msg",
+                "to": "referer",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.referer",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/server/rest/services/Hosted/survey123_387e02b82af140d79c543bc3c5351db8_form/FeatureServer/0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.tokenDuration",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.url",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/server/rest/services/Hosted/survey123_387e02b82af140d79c543bc3c5351db8_form/FeatureServer/0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.weight",
+                "pt": "msg",
+                "to": "payload.weight",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.timestamp_formatted",
+                "pt": "msg",
+                "to": "payload.time_stamp",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.timestamp",
+                "pt": "msg",
+                "to": "payload.real_timestamp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 1680,
+        "wires": [
+            [
+                "e82244042200c714"
+            ]
+        ]
+    },
+    {
+        "id": "a830a5a242d56140",
+        "type": "ui_text",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "group": "2b7ac01b.fc984",
+        "order": 28,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Record Saving Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1480,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "f3b54d74e096eeb6",
+        "type": "change",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "arcgis.authentication.portal",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/portal/sharing/rest",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.username",
+                "pt": "msg",
+                "to": "uitelgm",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.password",
+                "pt": "msg",
+                "to": "rrim@IPER889",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.client",
+                "pt": "msg",
+                "to": "referer",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.referer",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/server/rest/services/Hosted/survey123_ce1a285878b74869afa53b5e3580d9fc_form/FeatureServer/0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.tokenDuration",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.url",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/server/rest/services/Hosted/survey123_ce1a285878b74869afa53b5e3580d9fc_form/FeatureServer/0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.sensor_name",
+                "pt": "msg",
+                "to": "payload.sensor",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.timestamp_formatted",
+                "pt": "msg",
+                "to": "payload.time_stamp",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.acc_x",
+                "pt": "msg",
+                "to": "payload.acc_x",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.acc_y",
+                "pt": "msg",
+                "to": "payload.acc_y",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.acc_z",
+                "pt": "msg",
+                "to": "payload.acc_z",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 580,
+        "wires": [
+            [
+                "b1c49a37037147e3"
+            ]
+        ]
+    },
+    {
+        "id": "b1c49a37037147e3",
+        "type": "ArcGIS-Rest-Feature-Layer",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "Create Record at RRIM Geo Rubber",
+        "arcgisType": "addFeatures",
+        "x": 1050,
+        "y": 580,
+        "wires": [
+            [
+                "be2677e52ab362e8"
+            ]
+        ]
+    },
+    {
+        "id": "be2677e52ab362e8",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "RPM FS Response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "f9e56bac296a654b",
+        "type": "switch",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "If RPM > 0 then save data",
+        "property": "rotorRPM",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 580,
+        "wires": [
+            [
+                "f3b54d74e096eeb6",
+                "6380ee27e7c4b798"
+            ]
+        ]
+    },
+    {
+        "id": "6fad83a7225b0075",
+        "type": "change",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rotorRPM",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1130,
+        "y": 1200,
+        "wires": [
+            [
+                "7b51ac800d369808"
+            ]
+        ]
+    },
+    {
+        "id": "6380ee27e7c4b798",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "g": "346ec01539113abf",
+        "name": "debug 39",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a78574bb626ef7f5",
+        "type": "switch",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "If RPM > 0 then save data",
+        "property": "rotorRPM",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 630,
+        "y": 1100,
+        "wires": [
+            [
+                "7bab7dfb9b6ac189"
+            ]
+        ]
+    },
+    {
+        "id": "7bab7dfb9b6ac189",
+        "type": "change",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "arcgis.authentication.portal",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/portal/sharing/rest",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.username",
+                "pt": "msg",
+                "to": "uitelgm",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.password",
+                "pt": "msg",
+                "to": "rrim@IPER889",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.client",
+                "pt": "msg",
+                "to": "referer",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.referer",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/server/rest/services/Hosted/survey123_9b66b797520943799640e4d8c3a207d3_form/FeatureServer/0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.tokenDuration",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.url",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/server/rest/services/Hosted/survey123_9b66b797520943799640e4d8c3a207d3_form/FeatureServer/0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.timestamp_formatted",
+                "pt": "msg",
+                "to": "payload.time_stamp",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.sensor_position",
+                "pt": "msg",
+                "to": "front",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.rpm",
+                "pt": "msg",
+                "to": "payload.count",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 1100,
+        "wires": [
+            [
+                "65d5ddeb091fd876"
+            ]
+        ]
+    },
+    {
+        "id": "65d5ddeb091fd876",
+        "type": "ArcGIS-Rest-Feature-Layer",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "Create Record at RRIM Geo Rubber",
+        "arcgisType": "addFeatures",
+        "x": 1150,
+        "y": 1100,
+        "wires": [
+            [
+                "7df881440a074150"
+            ]
+        ]
+    },
+    {
+        "id": "7df881440a074150",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "g": "07fc87fbc0130a14",
+        "name": "F Rotor FS Response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1420,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "5b7c834a2fd50ded",
+        "type": "switch",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "If RPM > 0 then save data",
+        "property": "rotorRPM",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 1380,
+        "wires": [
+            [
+                "ca531690601ff9c3"
+            ]
+        ]
+    },
+    {
+        "id": "ca531690601ff9c3",
+        "type": "change",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "arcgis.authentication.portal",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/portal/sharing/rest",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.username",
+                "pt": "msg",
+                "to": "uitelgm",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.password",
+                "pt": "msg",
+                "to": "rrim@IPER889",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.client",
+                "pt": "msg",
+                "to": "referer",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.referer",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/server/rest/services/Hosted/survey123_9b66b797520943799640e4d8c3a207d3_form/FeatureServer/0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.authentication.tokenDuration",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.url",
+                "pt": "msg",
+                "to": "https://gis.lgm.gov.my/server/rest/services/Hosted/survey123_9b66b797520943799640e4d8c3a207d3_form/FeatureServer/0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.timestamp_formatted",
+                "pt": "msg",
+                "to": "payload.time_stamp",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.sensor_position",
+                "pt": "msg",
+                "to": "rear",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "arcgis.addFeatures.features[0].attributes.rpm",
+                "pt": "msg",
+                "to": "payload.count",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 1380,
+        "wires": [
+            [
+                "c34e7c76d880926c"
+            ]
+        ]
+    },
+    {
+        "id": "c34e7c76d880926c",
+        "type": "ArcGIS-Rest-Feature-Layer",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "Create Record at RRIM Geo Rubber",
+        "arcgisType": "addFeatures",
+        "x": 1210,
+        "y": 1380,
+        "wires": [
+            [
+                "f55c775fad52df2f"
+            ]
+        ]
+    },
+    {
+        "id": "f55c775fad52df2f",
+        "type": "debug",
+        "z": "b96a3b3a4607266d",
+        "g": "badb9384d0f932ea",
+        "name": "R Rotor FS Response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "e82244042200c714",
+        "type": "trigger",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "",
+        "op1": "",
+        "op2": "0",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "-2",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 680,
+        "y": 1680,
+        "wires": [
+            [
+                "33dd51c191eb9e2b"
+            ]
+        ]
+    },
+    {
+        "id": "692c7180730362d0",
+        "type": "switch",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "If Saved",
+        "property": "arcgis.response.addResults[0].success",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 1760,
+        "wires": [
+            [
+                "0a7677d6c731eee8"
+            ]
+        ]
+    },
+    {
+        "id": "0a7677d6c731eee8",
+        "type": "change",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "del Payload & set reset msg",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1760,
+        "wires": [
+            [
+                "e82244042200c714"
+            ]
+        ]
+    },
+    {
+        "id": "975f09a975fca141",
+        "type": "switch",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "Result routing",
+        "property": "arcgis.response.addResults[0].success",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 1060,
+        "y": 1780,
+        "wires": [
+            [
+                "c540f39056aae62b"
+            ],
+            [
+                "794745a11a65c0a1"
+            ],
+            [
+                "d4c71605f910c89e"
+            ]
+        ]
+    },
+    {
+        "id": "c540f39056aae62b",
+        "type": "change",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Saved",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 1740,
+        "wires": [
+            [
+                "a830a5a242d56140"
+            ]
+        ]
+    },
+    {
+        "id": "794745a11a65c0a1",
+        "type": "change",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Failed. Retrying...",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 1780,
+        "wires": [
+            [
+                "a830a5a242d56140"
+            ]
+        ]
+    },
+    {
+        "id": "d4c71605f910c89e",
+        "type": "change",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": " ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 1820,
+        "wires": [
+            [
+                "a830a5a242d56140"
+            ]
+        ]
+    },
+    {
+        "id": "37ff9f408245679c",
+        "type": "inject",
+        "z": "b96a3b3a4607266d",
+        "g": "c4c629fb76a04c6c",
+        "name": "Reset Trigger Node",
+        "props": [
+            {
+                "p": "reset",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 350,
+        "y": 1720,
+        "wires": [
+            [
+                "e82244042200c714"
+            ]
+        ]
+    }
+]
